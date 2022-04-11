@@ -4,6 +4,8 @@
     box-sizing: border-box;
     font-family: 'Montserrat', sans-serif;
 }
+
+/* STILE HEADER s */
  header {
      width: 100%;
      background-color: black;
@@ -13,8 +15,8 @@
      padding: 2% 1%;
  }
  #logo {
-    max-width: 13%;
-    max-height: 13%;
+    max-width: 10%;
+    max-height: 10%;
     position: absolute;
  }
  #header-btn {
@@ -22,4 +24,45 @@
      width: fit-content;
      padding: 0.7% 2%;
      border-radius: 20px;
+ }
+
+ /* STILE ASIDE  */
+ main {
+     display: flex;
+     justify-content: flex-start;
+ }
+ aside {
+     background-color: rgb(43, 40, 40);
+     color: lightgrey;
+     width: 15%;
+     height: 750px;
+     font-size: 1vw;
+     display: flex;
+     flex-direction: column;
+     justify-content: space-between;
+ }
+ .list-aside {
+     padding: 4% 8%;
+ }
+ aside .list-aside ul li {
+     padding-bottom: 5%;
+     list-style-type: none;
+ }
+ .list-aside ul li:first-child, #John-Doe{
+    color: white;
+ }
+ hr {
+     width: 85%;
+     margin: auto;
+ }
+
+
+
+
+
+/* STILE MAIN  */
+ #main-section {
+     background-color: blue;
+     width: 90%;
+     height: 500px;
  }
