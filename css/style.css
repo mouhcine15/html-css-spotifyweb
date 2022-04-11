@@ -75,7 +75,7 @@
  }
 
  /* Stile Prima sezione  */
- #prima-sezione {
+ .sezioni {
      display: flex;
      flex-direction: row;
      justify-content: flex-start;
@@ -83,7 +83,10 @@
  h2 {
      margin: 1%;
  }
- #prima-sezione img {
+ .sottotit-h2 {
+     margin: 1%;
+ }
+ .sezioni img {
     max-width: 100%;
     max-height: 100%; 
  }
