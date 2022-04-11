@@ -12,7 +12,7 @@
      color: white;
      display: flex;
      justify-content: space-between;
-     padding: 2% 1%;
+     padding: 1% 1%;
  }
  #logo {
     max-width: 10%;
@@ -56,13 +56,43 @@
      margin: auto;
  }
 
-
-
-
-
 /* STILE MAIN  */
  #main-section {
      background-color: blue;
      width: 90%;
-     height: 500px;
+     height: 1000px;
+     color: white;
+ }
+ #main-section nav ul {
+     color: lightslategrey;
+     display: flex;
+     flex-direction: row;
+     justify-content: center;
+ }
+ nav ul li {
+    list-style-type: none;
+    margin: 1% 1%;
+ }
+
+ /* Stile Prima sezione  */
+ #prima-sezione {
+     display: flex;
+     flex-direction: row;
+     justify-content: flex-start;
+ }
+ h2 {
+     margin: 1%;
+ }
+ #prima-sezione img {
+    max-width: 100%;
+    max-height: 100%; 
+ }
+ .recent {
+     width: 15.5%;
+     text-align: center;
+     margin-left: 1%;
+     margin-top: 1%;
+ }
+ .subtitle {
+     color: lightslategray;
  }
