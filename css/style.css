@@ -1,0 +1,25 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+ header {
+     width: 100%;
+     background-color: black;
+     color: white;
+     display: flex;
+     justify-content: space-between;
+     padding: 2% 1%;
+ }
+ #logo {
+    max-width: 13%;
+    max-height: 13%;
+    position: absolute;
+ }
+ #header-btn {
+     border: 1px solid white;
+     width: fit-content;
+     padding: 0.7% 2%;
+     border-radius: 20px;
+ }
