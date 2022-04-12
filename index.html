@@ -8,61 +8,52 @@
     <title>Spotify Replica</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-
-    <!-- HEADER  -->
-    <header>
-        <div>
-            <img id="logo" src="img/logo.svg" alt="logo">
-        </div>
-        <div id="header-btn">
-            EFFETTUA L'UPGRADE
-        </div>
-    </header>
-
-    <!-- MAIN  -->
-    <main>
-
         <!-- Aside  -->
         <aside>
-            <div>
-                <div class="list-aside"> <i class="fa-solid fa-house"></i> Home</div>
-                <div class="list-aside"> <i class="fa-solid fa-magnifying-glass"></i> Cerca</div>
-                <div class="list-aside"> <i class="fa-solid fa-compact-disc"></i> La tua libreria</div>
-                <div class="list-aside">
-                    <ul>
-                        <li>
-                            <strong>PLAYLIST</strong>
-                        </li>
-                        <li> 
-                            <i class="fa-solid fa-square-plus"></i>
-                            Crea Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                        <li>
-                            Nome Playlist
-                        </li>
-                    </ul>
+            <div id="top-aside">
+                <div>
+                    <img id="logo" src="img/logo.svg" alt="logo">
+                </div>
+                <div>
+                    <div class="list-aside"> <i class="fa-solid fa-house"></i> Home</div>
+                    <div class="list-aside"> <i class="fa-solid fa-magnifying-glass"></i> Cerca</div>
+                    <div class="list-aside"> <i class="fa-solid fa-compact-disc"></i> La tua libreria</div>
+                    <div class="list-aside">
+                        <ul>
+                            <li>
+                                <strong>PLAYLIST</strong>
+                            </li>
+                            <li> 
+                                <i class="fa-solid fa-square-plus"></i>
+                                Crea Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                            <li>
+                                Nome Playlist
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
-            <div>
+            
+            <div id="bottom-aside">
                 <div class="list-aside">
                     <i class="fa-solid fa-circle-arrow-down"></i> Installa app
                 </div>
@@ -74,124 +65,135 @@
             
         </aside>
 
-        <!-- Section  -->
-        <section id="main-section">
-            <!-- Nav  -->
-            <nav>
-                <ul>
-                    <li>
-                        <strong>IN EVIDENZA</strong>
-                    </li>
-                    <li>
-                        <strong>PODCAST</strong> 
-                    </li>
-                    <li>
-                        <strong>CLASSIFICHE</strong>
-                    </li>
-                    <li>
-                        <strong>GENERI E MOOD</strong>
-                    </li>
-                    <li>
-                        <strong>NUOVE USCITE</strong>
-                    </li>
-                    <li>
-                        <strong>SCOPRI</strong>
-                    </li>
-                </ul>
-            </nav>
-            <h2>
-                Recently played
-            </h2>
-            <section class="sezioni">
-                <div class="recent">
-                    <img src="img/metal_lifting.jpg" alt="">
-                    <div>
-                        <strong>Heavy Metal</strong>
-                    </div>
-                    <div class="subtitle">Subtitle</div>
-                </div>
-                <div class="recent">
-                    <img src="img/stranger.jpeg" alt="">
-                    <div>
-                        <strong>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</strong>
-                    </div>
-                    <div class="subtitle">Kyle Dixon & Michael Stein</div>
-                </div>
-                <div class="recent">
-                    <img src="img/aquietplace.jpeg" alt="">
-                    <div>
-                        <strong>A quiet place</strong>
-                    </div>
-                    <div class="subtitle">Subtitle</div>
-                </div>
-                <div class="recent">
-                    <img src="img/split.jpeg" alt="">
-                    <div>
-                        <strong>Split</strong>
-                    </div>
-                    <div class="subtitle">Subtitle</div>
-                </div>
-                <div class="recent">
-                    <img src="img/cure.jpeg" alt="">
-                    <div>
-                        <strong>A cure for wellness</strong>
-                    </div>
-                    <div class="subtitle">Subtitle</div>
-                </div>
-                <div class="recent">
-                    <img src="img/sinister.jpeg" alt="">
-                    <div>
-                        <strong>Sinister</strong>
-                    </div>
-                    <div class="subtitle">Subtitle</div>
-                </div>
-            </section>
-            <h2>
-                Creato per John Doe
-            </h2>
-            <div class="subtitle sottotit-h2">
-                Più ascolti, più accurati saranno i suggerimenti.
+    <div>
+        <!-- HEADER  -->
+        <header>
+            <div id="header-btn">
+                EFFETTUA L'UPGRADE
             </div>
-            <section class="sezioni">
-                <div class="recent">
-                    <img src="img/radar.jpeg" alt="">
-                    <div>
-                        <strong>Release Radar</strong>
-                    </div>
-                </div> 
-                <div class="recent">
-                    <img src="img/mixdaily.jpeg" alt="">
-                    <div>
-                        <strong>Daili Mix 1</strong>
-                    </div>
-                </div> 
-            </section>
-            <h2>
-                Artisti più popolari
-            </h2>
-            <div class="subtitle sottotit-h2">
-                Più ascolti, più accurati saranno i suggerimenti.
-            </div>
-            <section class="sezioni" id="artisti-pop">
-                <div class="recent">
-                    <img src="img/youg.jpeg" alt="">
-                    <div>
-                        <strong>Lana Del Rey</strong>
-                    </div>
-                </div> 
-                <div class="recent">
-                    <img src="img/einaudi.jpeg" alt="">
-                    <div>
-                        <strong>Ludovico Einaudi</strong>
-                    </div>
-                </div> 
-            </section>
-        </section>
-    </main>
+        </header>
 
+        <!-- MAIN  -->
+        <main>
+
+            <!-- Section  -->
+            <section id="main-section">
+                <!-- Nav  -->
+                <nav>
+                    <ul>
+                        <li>
+                            <strong>IN EVIDENZA</strong>
+                        </li>
+                        <li>
+                            <strong>PODCAST</strong> 
+                        </li>
+                        <li>
+                            <strong>CLASSIFICHE</strong>
+                        </li>
+                        <li>
+                            <strong>GENERI E MOOD</strong>
+                        </li>
+                        <li>
+                            <strong>NUOVE USCITE</strong>
+                        </li>
+                        <li>
+                            <strong>SCOPRI</strong>
+                        </li>
+                    </ul>
+                </nav>
+                <h2>
+                    Recently played
+                </h2>
+                <section class="sezioni">
+                    <div class="recent">
+                        <img src="img/metal_lifting.jpg" alt="">
+                        <div>
+                            <strong>Heavy Metal</strong>
+                        </div>
+                        <div class="subtitle">Subtitle</div>
+                    </div>
+                    <div class="recent">
+                        <img src="img/stranger.jpeg" alt="">
+                        <div>
+                            <strong>Stranger Things, Vol. 1 (a Netflix Original Series Soundtrack)</strong>
+                        </div>
+                        <div class="subtitle">Kyle Dixon & Michael Stein</div>
+                    </div>
+                    <div class="recent">
+                        <img src="img/aquietplace.jpeg" alt="">
+                        <div>
+                            <strong>A quiet place</strong>
+                        </div>
+                        <div class="subtitle">Subtitle</div>
+                    </div>
+                    <div class="recent">
+                        <img src="img/split.jpeg" alt="">
+                        <div>
+                            <strong>Split</strong>
+                        </div>
+                        <div class="subtitle">Subtitle</div>
+                    </div>
+                    <div class="recent">
+                        <img src="img/cure.jpeg" alt="">
+                        <div>
+                            <strong>A cure for wellness</strong>
+                        </div>
+                        <div class="subtitle">Subtitle</div>
+                    </div>
+                    <div class="recent">
+                        <img src="img/sinister.jpeg" alt="">
+                        <div>
+                            <strong>Sinister</strong>
+                        </div>
+                        <div class="subtitle">Subtitle</div>
+                    </div>
+                </section>
+                <h2>
+                    Creato per John Doe
+                </h2>
+                <div class="subtitle sottotit-h2">
+                    Più ascolti, più accurati saranno i suggerimenti.
+                </div>
+                <section class="sezioni">
+                    <div class="recent">
+                        <img src="img/radar.jpeg" alt="">
+                        <div>
+                            <strong>Release Radar</strong>
+                        </div>
+                    </div> 
+                    <div class="recent">
+                        <img src="img/mixdaily.jpeg" alt="">
+                        <div>
+                            <strong>Daili Mix 1</strong>
+                        </div>
+                    </div> 
+                </section>
+                <h2>
+                    Artisti più popolari
+                </h2>
+                <div class="subtitle sottotit-h2">
+                    Più ascolti, più accurati saranno i suggerimenti.
+                </div>
+                <section class="sezioni" id="artisti-pop">
+                    <div class="recent">
+                        <img src="img/youg.jpeg" alt="">
+                        <div>
+                            <strong>Lana Del Rey</strong>
+                        </div>
+                    </div> 
+                    <div class="recent">
+                        <img src="img/einaudi.jpeg" alt="">
+                        <div>
+                            <strong>Ludovico Einaudi</strong>
+                        </div>
+                    </div> 
+                </section>
+            </section>
+        </main>
+    </div>
     <!-- FOOTER  -->
     <footer>
-
+        
     </footer>
 </body>
 </html>

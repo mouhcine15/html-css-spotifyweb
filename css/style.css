@@ -5,63 +5,87 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-/* STILE HEADER s */
- header {
-     width: 100%;
-     background-color: black;
-     color: white;
-     display: flex;
-     justify-content: space-between;
-     padding: 1% 1%;
- }
- #logo {
-    max-width: 10%;
-    max-height: 10%;
-    position: absolute;
- }
- #header-btn {
-     border: 1px solid white;
-     width: fit-content;
-     padding: 0.7% 2%;
-     border-radius: 20px;
- }
+body {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
 
- /* STILE ASIDE  */
- main {
-     display: flex;
-     justify-content: flex-start;
- }
- aside {
-     background-color: rgb(0, 0, 0);
-     color: lightgrey;
-     width: 15%;
-     height: 750px;
-     font-size: 1vw;
-     display: flex;
-     flex-direction: column;
-     justify-content: space-between;
- }
- .list-aside {
-     padding: 4% 8%;
- }
- aside .list-aside ul li {
-     padding-bottom: 5%;
-     list-style-type: none;
- }
- .list-aside ul li:first-child, #John-Doe{
+
+
+/* STILE ASIDE  */
+
+aside {
+    background-color: rgb(0, 0, 0);
+    color: lightgrey;
+    width: 15%;
+    height: 90vh;
+    font-size: 1vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    position: fixed;
+}
+#bottom-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+#logo {
+    padding: 5%;
+    max-width: 80%;
+    max-height: 80%;
+}
+.list-aside {
+    padding: 4% 8%;
+}
+aside .list-aside ul li {
+    padding-bottom: 5%;
+    list-style-type: none;
+}
+.list-aside ul li:first-child, #John-Doe{
     color: white;
- }
- hr {
-     width: 85%;
-     margin: auto;
- }
+}
+hr {
+    width: 85%;
+    margin: auto;
+}
+
+/* STILE HEADER */
+header {
+    width: 85%;
+    background-color: rgb(51, 47, 47);
+    color: white;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1% 1%;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 500;
+}
+#header-btn {
+    border: 1px solid white;
+    width: fit-content;
+    padding: 0.7% 2%;
+    border-radius: 20px;
+}
+
 
 /* STILE MAIN  */
+main {
+    display: flex;
+    justify-content: flex-start;
+}
  #main-section {
      background-color: rgb(24, 24, 51);
-     width: 90%;
-     height: 1500px;
+     width: 85%;
      color: white;
+     position: absolute;
+     right: 0;
+ }
+ nav {
+     margin-top: 5%;
  }
  #main-section nav ul {
      color: lightslategrey;
@@ -90,6 +114,9 @@
     max-width: 100%;
     max-height: 100%; 
  }
+ #artisti-pop {
+     margin-bottom: 10%;
+ }
  #artisti-pop img {
      border-radius: 50%;
  }
@@ -101,4 +128,14 @@
  }
  .subtitle {
      color: lightslategray;
+ }
+
+ /* STILE FOOTER  */
+ footer {
+     position: fixed;
+     bottom: 0;
+     left: 0;
+     background-color: grey;
+     width: 100%;
+     height: 100px;
  }
