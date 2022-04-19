@@ -37,14 +37,21 @@ aside {
     max-width: 80%;
     max-height: 80%;
 }
-.list-aside {
+.list-aside, .list-aside-last {
     padding: 4% 8%;
 }
-aside .list-aside ul li {
+.list-aside:hover {
+    border-left: solid greenyellow 3px;
+    color: white;
+}
+.list-aside-last ul li:hover {
+    color: white;
+}
+aside .list-aside-last ul li {
     padding-bottom: 5%;
     list-style-type: none;
 }
-.list-aside ul li:first-child, #John-Doe{
+.list-aside-last ul li:first-child, #John-Doe{
     color: white;
 }
 hr {
@@ -70,6 +77,9 @@ header {
     width: fit-content;
     padding: 0.7% 2%;
     border-radius: 20px;
+}
+#header-btn:hover {
+    transform: scale(1.1);
 }
 
 
@@ -97,6 +107,14 @@ main {
  nav ul li {
     list-style-type: none;
     margin: 1% 1%;
+ }
+ nav ul li:hover {
+     color: white;
+ }
+ nav ul li hr {
+     background-color: rgb(156, 247, 19);
+     width: 50px;
+     height: 4px;
  }
 
  /* Stile Prima sezione  */
@@ -130,6 +148,24 @@ main {
  .subtitle {
      color: lightslategray;
  }
+.sezioni div div {
+    position: relative;
+}
+.sezioni i {
+    position:absolute;
+    top: 118px;
+    left: 118px;
+    z-index: 100;
+    transform: scale(4);
+    display: none;
+}
+.sezioni div:hover i{
+    display: block;
+}
+ .sezioni img:hover {
+     opacity: 0.3;
+ }
+ 
 
  /* STILE FOOTER  */
  footer {
@@ -144,6 +180,7 @@ main {
      justify-content: space-between;
  }
 
+ /* stile footer sinistra  */
  #sinister {
     max-width: 30%;
     max-height: 30%;
@@ -168,6 +205,20 @@ main {
  #foot-sx div i {
      margin-right: 10px;
  }
+ #nome-brano div p {
+     color: grey;
+ }
+ #nome-brano div p:hover {
+     color: white;
+     text-decoration: underline;
+ }
+ #heart-folder {
+     color: grey;
+ }
+ .fa-heart:hover, .fa-folder:hover {
+     color: white;
+ }
+
 
  /* stile footer centrale */
  
@@ -202,8 +253,14 @@ main {
     height: 4px;
     width: 100px;
   }
+  .progress-value:hover {
+      background-color:greenyellow;
+  }
   #foot-cx #progress span {
       margin: 0 20px;
+  }
+  #foot-cx .fa-circle-play:hover {
+      transform: scale(2.2);
   }
 
 /* stile footer destra  */
