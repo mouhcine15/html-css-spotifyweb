@@ -153,6 +153,7 @@ main {
      display: flex;
      flex-direction: row;
      align-items: center;
+     width: 15%;
  }
 #nome-brano{
     display: flex;
@@ -160,7 +161,10 @@ main {
     justify-content: flex-start;
     align-items: center;
  }
-
+#foot-sx #heart-folder {
+    display: flex;
+    justify-content: flex-end;
+}
  #foot-sx div i {
      margin-right: 10px;
  }
@@ -201,3 +205,24 @@ main {
   #foot-cx #progress span {
       margin: 0 20px;
   }
+
+/* stile footer destra  */
+
+#foot-dx {
+    display: flex;
+    align-items: center;
+}
+
+#foot-dx div i {
+    margin: 0 10px;
+}
+
+ #lil-progress-bar {
+     width: 150px;
+     margin-right: 20px;
+ }
+
+ #lil-progress-value {
+     width: 40px;
+     margin-right: 20px;
+ }
