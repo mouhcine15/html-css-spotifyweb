@@ -21,7 +21,7 @@ aside {
     color: lightgrey;
     width: 15%;
     height: 90vh;
-    font-size: 1vw;
+    /* font-size: 1vw; */
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -282,4 +282,28 @@ main {
  #lil-progress-value {
      width: 40px;
      margin-right: 20px;
+ }
+
+
+ /* RSPONSIVE */
+ @media screen and (max-width:730px) {
+     aside {
+         font-size: 2vw;
+     }
+
+     #main-section nav ul {
+         margin-top: 50px;
+     }
+     #main-section nav ul li {
+
+         display: flex;
+         flex-wrap: wrap;
+
+     }
+     .recent {
+         display: flex;
+         flex-wrap: wrap;
+         width: auto;
+     }
+
  }
