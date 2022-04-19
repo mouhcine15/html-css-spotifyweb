@@ -141,7 +141,7 @@ main {
  }
  .recent {
      width: 15.5%;
-     min-width: 150px;
+     min-width: 15px;
      text-align: center;
      margin-left: 1%;
      margin-top: 1%;
@@ -154,8 +154,9 @@ main {
 }
 .sezioni i {
     position:absolute;
-    top: 118px;
-    left: 118px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
     z-index: 100;
     transform: scale(4);
     display: none;
@@ -296,7 +297,6 @@ main {
          margin-top: 50px;
      }
      #main-section nav ul li {
-
          display: flex;
          flex-wrap: wrap;
 
@@ -306,5 +306,17 @@ main {
          display: flex;
          flex-wrap: wrap;
      }
+     .sezioni i {
+        position:absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 100;
+        transform: scale(3);
+        display: none;
+    }
+    .sezioni div:hover i{
+        display: block;
+    }
 
  }
